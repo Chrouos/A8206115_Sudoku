@@ -1,2 +1,5 @@
 ﻿  main.cpp
-  SFML_Visual.vcxproj -> D:\製作遊戲\數獨_SFML\SFML_Visual\Debug\SFML_Visual.exe
+D:\Programming language\製作遊戲\數獨_SFML\SFML_Visual\main.cpp(45,15): warning C4244: '引數': 將 'time_t' 轉換為 'unsigned int'，由於類型不同，可能導致資料遺失
+D:\Programming language\製作遊戲\數獨_SFML\SFML_Visual\main.cpp(54,9): warning C4101: 'sGrid': 未參考的區域變數
+D:\Programming language\製作遊戲\數獨_SFML\SFML_Visual\main.cpp(39): warning C4715: 'check': 不是所有控制路徑都傳回值
+  SFML_Visual.vcxproj -> D:\Programming language\製作遊戲\數獨_SFML\SFML_Visual\Debug\SFML_Visual.exe
