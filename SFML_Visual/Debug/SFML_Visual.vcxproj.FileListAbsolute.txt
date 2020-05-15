@@ -1,8 +1,0 @@
-C:\Users\Avrill\Desktop\SFML environment\SFML_Visual\Debug\SFML_Visual.exe
-C:\Users\Avrill\Desktop\SFML environment\SFML_Visual\Debug\SFML_Visual.pdb
-D:\C++\SFML environment\SFML_Visual\Debug\SFML_Visual.exe
-D:\C++\SFML environment\SFML_Visual\Debug\SFML_Visual.pdb
-D:\製作遊戲\數獨_SFML\SFML_Visual\Debug\SFML_Visual.exe
-D:\製作遊戲\數獨_SFML\SFML_Visual\Debug\SFML_Visual.pdb
-D:\Programming language\製作遊戲\數獨_SFML\SFML_Visual\Debug\SFML_Visual.exe
-D:\Programming language\製作遊戲\數獨_SFML\SFML_Visual\Debug\SFML_Visual.pdb

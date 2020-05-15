@@ -1,0 +1,2 @@
+D:\Programming language\製作遊戲\數獨—空白專案\Debug\數獨—空白專案.exe
+D:\Programming language\製作遊戲\數獨—空白專案\Debug\數獨—空白專案.pdb
