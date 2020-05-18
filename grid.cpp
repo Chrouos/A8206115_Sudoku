@@ -49,7 +49,7 @@ void Grid::Generator() {
 
 	
 	
-	
+	//把順序打亂
 	int numtmp[9] = { 1,2,3,4,5,6,7,8,9 };
 	for (int i = 0; i < 9; i++) {
 		int numRand = rand() % 9;
@@ -57,20 +57,19 @@ void Grid::Generator() {
 		numtmp[i] = numtmp[numRand];
 		numtmp[numRand] = temp;
 	}
-			
+
+	//換順序
 	for (int count = 0; count < 81; count++) {
 		int row = count / 9;//第幾行
 		int col = count % 9;//第幾個
 		grid[row][col] = numtmp[grid[row][col] - 1];
 	}
-	
+
 	
 
 
 
 }
-
-
 
 
 void Grid::print() {
@@ -110,6 +109,7 @@ bool Grid::checkPutInGrid() {
 	for (int n = 0; n < 9; n++) { // 填數字n 1~9
 
 		FAIL = 0; 
+		//填入九個 3*3
 		for (int i = 1; i < 9; i++) {
 
 			count = i / 3 * 27 + i % 3 * 3; //九宮格的第一格
@@ -118,18 +118,22 @@ bool Grid::checkPutInGrid() {
 			int row = count / 9;
 			int col = count % 9;
 
+			//如果 直、橫不重複就繼續做
 			while (nReaptingNum == true) {
 				numRand = rand() % 9;
 
+				//隨機取 並確認直橫不重複
 				int tempCount = count + numRand / 3 * 9 + numRand % 3;
 				nReaptingNum = P.nReaptingCroner(n + 1, tempCount, grid);
 				
+				//計算錯誤次數
 				++FAIL;
 				++numFail;
 
 				int tempRow = tempCount / 9;//第幾行
 				int tempCol = tempCount % 9;//第幾個
 
+				//如果都不重複就填入
 				if (grid[tempRow][tempCol] == 0 && nReaptingNum == false) {
 					grid[tempRow][tempCol] = n + 1;
 					nReaptingNum = true;
@@ -138,6 +142,7 @@ bool Grid::checkPutInGrid() {
 				else {
 					nReaptingNum = true;
 				}
+				//一個數字重複100次 就重填
 				if (numFail > 100) {
 					for (int m = 0; m < 81; m++) {
 						int fRow = m / 9;//第幾行
@@ -153,6 +158,8 @@ bool Grid::checkPutInGrid() {
 					i = 0;
 					break;
 				}
+
+				//總數超過一次全部重來
 				if (FAIL > 1000)
 					return false;
 			}
