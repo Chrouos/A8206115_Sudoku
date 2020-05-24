@@ -138,13 +138,17 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="dig.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="puzzleCheck.cpp" />
     <ClCompile Include="grid.cpp" />
+    <ClCompile Include="solveSudoku.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="dig.h" />
     <ClInclude Include="grid.h" />
     <ClInclude Include="puzzleCheck.h" />
+    <ClInclude Include="sloveSudoku.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

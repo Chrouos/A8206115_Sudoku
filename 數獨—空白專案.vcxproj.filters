@@ -24,12 +24,24 @@
     <ClCompile Include="puzzleCheck.cpp">
       <Filter>來源檔案</Filter>
     </ClCompile>
+    <ClCompile Include="dig.cpp">
+      <Filter>來源檔案</Filter>
+    </ClCompile>
+    <ClCompile Include="solveSudoku.cpp">
+      <Filter>來源檔案</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="grid.h">
       <Filter>標頭檔</Filter>
     </ClInclude>
     <ClInclude Include="puzzleCheck.h">
+      <Filter>標頭檔</Filter>
+    </ClInclude>
+    <ClInclude Include="dig.h">
+      <Filter>標頭檔</Filter>
+    </ClInclude>
+    <ClInclude Include="sloveSudoku.h">
       <Filter>標頭檔</Filter>
     </ClInclude>
   </ItemGroup>

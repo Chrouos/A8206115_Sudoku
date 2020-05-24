@@ -65,12 +65,7 @@ void Grid::Generator() {
 		grid[row][col] = numtmp[grid[row][col] - 1];
 	}
 
-	
-
-
-
 }
-
 
 void Grid::print() {
 	for (int i = 0; i < 9; i++) {
@@ -167,4 +162,6 @@ bool Grid::checkPutInGrid() {
 	}
 	return true;
 }
+
+
 

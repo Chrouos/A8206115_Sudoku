@@ -1,2 +1,8 @@
-﻿  grid.cpp
-  數獨—空白專案.vcxproj -> D:\Programming language\製作遊戲\數獨—空白專案\Debug\數獨—空白專案.exe
+﻿  dig.cpp
+  main.cpp
+  puzzleCheck.cpp
+  grid.cpp
+  solveSudoku.cpp
+  正在產生程式碼...
+  LINK : 最後的累加連結找不到或未建置 D:\製作遊戲\A8206115_Sudoku\Debug\數獨—空白專案.exe，正在執行完整連結
+  數獨—空白專案.vcxproj -> D:\製作遊戲\A8206115_Sudoku\Debug\數獨—空白專案.exe

@@ -1,13 +1,20 @@
 #include<iostream>
 #include"grid.h"
 #include"puzzleCheck.h"
+#include"sloveSudoku.h"
+#include"dig.h"
 using namespace std;
 
 int main()
 {
 
-    Grid grid;
-    grid.print();
+    Grid ansGrid;
+    Grid showGrid(ansGrid);
+
+    SloveSudoku S;
+
+
+    
 
 
     system("pause");

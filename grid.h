@@ -15,6 +15,7 @@ class Grid
 public:
 	
 	Grid();
+	Grid(int copyGrid[9][9]);
 
 	//題目生產
 	void Generator();
@@ -26,6 +27,7 @@ public:
 	void clear();
 	//填入數字 太多就重新
 	bool checkPutInGrid();
+
 
 
 
