@@ -164,4 +164,13 @@ bool Grid::checkPutInGrid() {
 }
 
 
+int& Grid::operator[](int count) {
+	
+	int row = count / 9;//第幾行
+	int col = count % 9;//第幾個
+
+	return grid[row][col];
+
+}
+
 
