@@ -12,11 +12,11 @@ int main()
    // Grid showGrid(ansGrid);
 
 
-    //GRID Âà´«¦¨ INT
+    //GRID è½‰æ›æˆ INT
     int grid[9][9];
     for (int i = 0; i < 81; i++) {
-        int row = i / 9;//²Ä´X¦æ
-        int col = i % 9;//²Ä´X­Ó
+        int row = i / 9;//ç¬¬å¹¾è¡Œ
+        int col = i % 9;//ç¬¬å¹¾å€‹
         grid[row][col] = ansGrid[i];
     }
 
@@ -31,10 +31,9 @@ int main()
     D.dig_simple(showGrid);
     
 
-   
     //print
-    //µe®æ¤l
-    cout << "A " << "B " << "C   " << "D " << "E " << "F   " << "G " << "H " << "I " << endl; //¤W­±ªº¦r¥À½s¸¹
+    //ç•«æ ¼å­
+    cout << "A " << "B " << "C   " << "D " << "E " << "F   " << "G " << "H " << "I " << endl; //ä¸Šé¢çš„å­—æ¯ç·¨è™Ÿ
     for (int i = 0; i < 9; i++) {
         if (i % 3 == 0) cout << "---------------------" << endl;
         for (int j = 0; j < 9; j++) {
@@ -44,9 +43,9 @@ int main()
         cout << endl;
     }
 
-    //¥ªÃäªº¦r¥À½s¸¹
+    //å·¦é‚Šçš„å­—æ¯ç·¨è™Ÿ
     /*
-    ¼Æ¿W¤¤ªº¶Ã¼Æ¦³°İÃD
+    æ•¸ç¨ä¸­çš„äº‚æ•¸æœ‰å•é¡Œ
     cout << "   " << "A " << "B " << "C " << "D " << "E " << "F " << "G " << "H " << "I " << endl;
     cout << "  ------------------" << endl;
     int j = 97;
@@ -62,21 +61,21 @@ int main()
     } 
     */
 
-    //§PÂ_¤Î¶ñ¤J¼Æ¦r
+    //åˆ¤æ–·åŠå¡«å…¥æ•¸å­—
     PuzzleCheck p;
 
-    while (p.check(showGrid) == false) {//§PÂ_ª½¾î°Ï¬O§_¬Û¥[¦³45
-        cout << "Did not enter all digits in 0 ~9.Please enter the complete 0~9: ";//¥¼¿é¤J0~9¤º©Ò¦³¼Æ¦r ½Ğ¿é¤J§¹¾ãªº0~9
+    while (p.check(showGrid) == false) {//åˆ¤æ–·ç›´æ©«å€æ˜¯å¦ç›¸åŠ æœ‰45
+        cout << "Did not enter all digits in 0 ~9.Please enter the complete 0~9: ";//æœªè¼¸å…¥0~9å…§æ‰€æœ‰æ•¸å­— è«‹è¼¸å…¥å®Œæ•´çš„0~9
         for (int i = 0; i < 9; i++) {
             cout << "Enter a number: ";
             for (int j = 0; j < 9; j++) {
                 if (showGrid[i][j] == 0) {
                     int input;
                     cin >> input;
-                    showGrid[i][j] = input;//±N¼Æ¦r¶ñ¤J
-                    if (p.nReaptingBlock(input, 25, showGrid) == false || p.nReaptingCroner(input, 25, showGrid) == false) {//§PÂ_¦¹¼Æ¦r¬O§_­«½Æ
+                    showGrid[i][j] = input;//å°‡æ•¸å­—å¡«å…¥
+                    if (p.nReaptingBlock(input, 25, showGrid) == false || p.nReaptingCroner(input, 25, showGrid) == false) {//åˆ¤æ–·æ­¤æ•¸å­—æ˜¯å¦é‡è¤‡
                         showGrid[i][j] = 0;
-                        cout << "This number is repeated.Please enter a new number: ";//³o­Ó¼Æ¦r­«½Æ¤F ½Ğ¿é¤J¤@­Ó·sªº¼Æ¦r
+                        cout << "This number is repeated.Please enter a new number: ";//é€™å€‹æ•¸å­—é‡è¤‡äº† è«‹è¼¸å…¥ä¸€å€‹æ–°çš„æ•¸å­—
                         continue;
                     }
                     else {
@@ -84,7 +83,7 @@ int main()
                             if (i % 3 == 0) cout << "---------------------" << endl;
                             for (int j = 0; j < 9; j++) {
                                 if (j != 0 && j % 3 == 0) cout << "| ";
-                                cout << showGrid[i][j] << " "; //¦L¥X³Ì·sµª®×
+                                cout << showGrid[i][j] << " "; //å°å‡ºæœ€æ–°ç­”æ¡ˆ
                             }
                             cout << endl;
                         }
