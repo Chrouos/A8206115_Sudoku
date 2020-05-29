@@ -73,7 +73,7 @@ int main()
                     int input;
                     cin >> input;
                     showGrid[i][j] = input;//將數字填入
-                    if (p.nReaptingBlock(input, 25, showGrid) == false || p.nReaptingCroner(input, 25, showGrid) == false) {//判斷此數字是否重複
+                    if (p.nReaptingBlock(input, 25, showGrid) == false || p.nReaptingCroner(input, 25, showGrid) == false) {//判斷此數字是否重複 count的數字應該不正確
                         showGrid[i][j] = 0;
                         cout << "This number is repeated.Please enter a new number: ";//這個數字重複了 請輸入一個新的數字
                         continue;
