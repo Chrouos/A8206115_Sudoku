@@ -6,7 +6,7 @@
 #include<ctime>
 using namespace std;
 
-//§PÂ_¼Æ¿W¤¤¬O§_ÁÙ¦³ªÅ®æ
+//åˆ¤æ–·æ•¸ç¨ä¸­æ˜¯å¦é‚„æœ‰ç©ºæ ¼
 
 bool BlankCheck(int showGrid[9][9]) {
     for (int i = 0; i < 9; i++) {
@@ -16,11 +16,11 @@ bool BlankCheck(int showGrid[9][9]) {
     }
 }
 
-//µe®æ¤l¤Î¦L¥X
+//ç•«æ ¼å­åŠå°å‡º
 void lattice(int showGrid[9][9]) {
-    cout << "    " << "0 " << "1 " << "2   " << "3 " << "4 " << "5   " << "6 " << "7 " << "8 " << endl; //¦ì¸m½s¸¹
+    cout << "    " << "0 " << "1 " << "2   " << "3 " << "4 " << "5   " << "6 " << "7 " << "8 " << endl; //ä½ç½®ç·¨è™Ÿ
     for (int i = 0; i < 9; i++) {
-        if (i % 3 == 0) cout << "  ¡X¡X¡X¡X¡X¡X¡X¡X¡X¡X¡X¡X" << endl;
+        if (i % 3 == 0) cout << "  â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”" << endl;
         for (int j = 0; j < 9; j++) {
             if (j == 0) cout << i << " | ";
             else if (j != 0 && j % 3 == 0) cout << "| ";
@@ -28,7 +28,7 @@ void lattice(int showGrid[9][9]) {
         }
         cout << endl;
     }
-    cout << "  ¡X¡X¡X¡X¡X¡X¡X¡X¡X¡X¡X¡X" << endl;
+    cout << "  â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”" << endl;
 }
 
 int main()
@@ -36,11 +36,11 @@ int main()
     Grid ansGrid;
    // Grid showGrid(ansGrid);
 
-    //GRID Âà´«¦¨ INT
+    //GRID è½‰æ›æˆ INT
     int grid[9][9];
     for (int i = 0; i < 81; i++) {
-        int row = i / 9;//²Ä´X¦æ
-        int col = i % 9;//²Ä´X­Ó
+        int row = i / 9;//ç¬¬å¹¾è¡Œ
+        int col = i % 9;//ç¬¬å¹¾å€‹
         grid[row][col] = ansGrid[i];
     }
 
@@ -51,56 +51,56 @@ int main()
         }
     }
 
-    cout << "«¢Åo«¢Åo¡AÅwªï§A¶}±Ò¤F³o­Ó¡u¼Æ¿W¤p¹CÀ¸¡v¡A¥H¤U¬°¹CÀ¸»¡©ú¤Î³W«h¡õ¡õ¡õ\n\n"
-        << "»¡©ú:\n¹CÀ¸¥Øªº¬°±N9x9ªº¤è¶ô¶ñº¡¼Æ¦r\nÅı¨C¤@¦æ¡B¨C¤@¦C§Y¨C¤@®æ3x3ªº¤è¶ô¤¤³£¶ñº¡¼Æ¦r\n0¬°ªÅ®æªí¥Ü»İ­n¿é¤J¼Æ¦rªº¦ì¸m\n\n"
-        << "³W«h:\n¥u¯à¶ñ¤J1¨ì9¤§¶¡ªº¼Æ¦r¥B¤£¯à­«½Æ\n\n"
-        << "ÂIÀ»Enter«K¶}©l¹CÀ¸®@!!!";
+    cout << "å“ˆå›‰å“ˆå›‰ï¼Œæ­¡è¿ä½ é–‹å•Ÿäº†é€™å€‹ã€Œæ•¸ç¨å°éŠæˆ²ã€ï¼Œä»¥ä¸‹ç‚ºéŠæˆ²èªªæ˜åŠè¦å‰‡â†“â†“â†“\n\n"
+        << "èªªæ˜:\néŠæˆ²ç›®çš„ç‚ºå°‡9x9çš„æ–¹å¡Šå¡«æ»¿æ•¸å­—\nè®“æ¯ä¸€è¡Œã€æ¯ä¸€åˆ—å³æ¯ä¸€æ ¼3x3çš„æ–¹å¡Šä¸­éƒ½å¡«æ»¿æ•¸å­—\n0ç‚ºç©ºæ ¼è¡¨ç¤ºéœ€è¦è¼¸å…¥æ•¸å­—çš„ä½ç½®\n\n"
+        << "è¦å‰‡:\nåªèƒ½å¡«å…¥1åˆ°9ä¹‹é–“çš„æ•¸å­—ä¸”ä¸èƒ½é‡è¤‡\n\n"
+        << "é»æ“ŠEnterä¾¿é–‹å§‹éŠæˆ²å“¦!!!";
     
-    cin.ignore(); //¼È°±¤§«á¦A°õ¦æ
+    cin.ignore(); //æš«åœä¹‹å¾Œå†åŸ·è¡Œ
 
     Dig D;
     D.dig_simple(showGrid);
 
     cout << endl;
     lattice(showGrid);
-    clock_t start, stop; //«Å§i­p®É¾¹
-    start = clock(); //­p®É¾¹¶}©l
+    clock_t start, stop; //å®£å‘Šè¨ˆæ™‚å™¨
+    start = clock(); //è¨ˆæ™‚å™¨é–‹å§‹
 
     //print
     while (BlankCheck(showGrid) == false) {
-        //¨Ï¥ÎªÌ¿é¤J¦ì¸m
+        //ä½¿ç”¨è€…è¼¸å…¥ä½ç½®
         int x, y, number;
-        cout << "½Ğ¿é¤J±z­n¶ñ¤J¼Æ¦rªº¥ªÃä¦ì¸m: ";
+        cout << "è«‹è¼¸å…¥æ‚¨è¦å¡«å…¥æ•¸å­—çš„å·¦é‚Šä½ç½®: ";
         cin >> x;
-        cout << "½Ğ¿é¤J±z­n¶ñ¤J¼Æ¦rªº¤WÃä¦ì¸m: ";
+        cout << "è«‹è¼¸å…¥æ‚¨è¦å¡«å…¥æ•¸å­—çš„ä¸Šé‚Šä½ç½®: ";
         cin >> y;
-        //§PÂ_¿é¤JªÌ¿é¤Jªº¦ì¸m¬O§_¬°0
-        while (showGrid[x][y] != 0) {
-            cout << "¿é¤J¦ì¸m¿ù»~!!!½Ğ¿é¤J¦bÃD¥Ø¤¤¼Æ¦r¬°0ªº¦ì¸m®@" << endl;
-            cout << "½Ğ¿é¤J±z­n¶ñ¤J¼Æ¦rªº¥ªÃä¦ì¸m: ";
+        //åˆ¤æ–·è¼¸å…¥è€…è¼¸å…¥çš„ä½ç½®æ˜¯å¦ç‚º0
+        while (showGrid[x][y] != 0 || x>9 || y>9) {
+            cout << "è¼¸å…¥ä½ç½®éŒ¯èª¤!!!è«‹è¼¸å…¥åœ¨é¡Œç›®ä¸­æ•¸å­—ç‚º0çš„ä½ç½®å“¦" << endl;
+            cout << "è«‹è¼¸å…¥æ‚¨è¦å¡«å…¥æ•¸å­—çš„å·¦é‚Šä½ç½®: ";
             cin >> x;
-            cout << "½Ğ¿é¤J±z­n¶ñ¤J¼Æ¦rªº¤WÃä¦ì¸m: ";
+            cout << "è«‹è¼¸å…¥æ‚¨è¦å¡«å…¥æ•¸å­—çš„ä¸Šé‚Šä½ç½®: ";
             cin >> y;
         }
 
-        cout << "½Ğ¿é¤J­n§ó§ïªº¼Æ¦r: ";
+        cout << "è«‹è¼¸å…¥è¦æ›´æ”¹çš„æ•¸å­—: ";
         cin >> number;
         PuzzleCheck pc;
         while (pc.nReaptingCroner(number, 9*x+y, showGrid) == true || pc.nReaptingBlock(number, 9*x+y, showGrid) == false) {
-            cout << "¦¹¼Æ¦r¤w­«½ÆÅo~½Ğ´«­Ó¼Æ¦r¦A¦¸¿é¤J" << endl;
-            cout << "½Ğ¿é¤J­n§ó§ïªº¼Æ¦r: ";
+            cout << "æ­¤æ•¸å­—å·²é‡è¤‡å›‰~è«‹æ›å€‹æ•¸å­—å†æ¬¡è¼¸å…¥" << endl;
+            cout << "è«‹è¼¸å…¥è¦æ›´æ”¹çš„æ•¸å­—: ";
             cin >> number;
         }
         showGrid[x][y] = number;
         system("CLS");
         lattice(showGrid);
     }
-    stop = clock();//­p®É¾¹µ²§ô
-    cout << "®¥³ß§A§¹¦¨¤F¥»¦¸¡u¼Æ¿W¤p¹CÀ¸¡v\n"
-        << "§AÁ`¦@¹Cª±¤F: " << double(stop - start) / CLOCKS_PER_SEC << "¬í!\n" //¦L¥X­p®É¾¹ªº®É¶¡
-        << "ÂIÀ»EnterÁä¥iÀò±oºë¬ü¤pÂ§ª«Ëç!!!" << endl;
+    stop = clock();//è¨ˆæ™‚å™¨çµæŸ
+    cout << "æ­å–œä½ å®Œæˆäº†æœ¬æ¬¡ã€Œæ•¸ç¨å°éŠæˆ²ã€\n"
+        << "ä½ ç¸½å…±éŠç©äº†: " << double(stop - start) / CLOCKS_PER_SEC << "ç§’!\n" //å°å‡ºè¨ˆæ™‚å™¨çš„æ™‚é–“
+        << "é»æ“ŠEnteréµå¯ç²å¾—ç²¾ç¾å°ç¦®ç‰©å‘¦!!!" << endl;
     cin.ignore();
-        cout << "ªá¨º»ò¤[¤p¹à¹à! ¦³ºØ¦A¬D¾Ô¤@¦¸§rOuOb" << endl;
+        cout << "èŠ±é‚£éº¼ä¹…å°å«©å«©! æœ‰ç¨®å†æŒ‘æˆ°ä¸€æ¬¡å‘€OuOb" << endl;
 
     system("pause");
     return 0;
