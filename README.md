@@ -18,7 +18,7 @@
 
 
 ----
-*`grid: 產生題目 ， Generator() 作用為製作題目，利用checkPutInGrid()去做確認，以免失敗太多次再重新製作一個新的題目，裏頭還有print() 可以幫忙做輸出的動作，為了方便操作，寫了一個operator來幫忙轉成int來使用`   
+`grid: 產生題目 ， Generator() 作用為製作題目，利用checkPutInGrid()去做確認，以免失敗太多次再重新製作一個新的題目，裏頭還有print() 可以幫忙做輸出的動作，為了方便操作，寫了一個operator來幫忙轉成int來使用`   
       
 `puzzleCheck：確認是否有重複數字，並且可以適用於main函式之中幫忙除錯，告知使用者的提入錯誤，也可利用在Generator() 便於製作題目`      
       
