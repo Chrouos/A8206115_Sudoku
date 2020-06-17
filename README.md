@@ -47,7 +47,7 @@
 
 + **範例數獨題目**
 
-![alt 文字](https://i.imgur.com/t3Nipsa.png "我們的數獨題目")
+![alt 文字](https://i.imgur.com/4lqZArO.png "我們的數獨題目")
 
 ***
 **備註**：
