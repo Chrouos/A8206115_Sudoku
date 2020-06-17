@@ -23,19 +23,19 @@
 ----
 + **grid**: 產生題目    
   - `Generator()：作用為製作題目  `       
-  - `checkPutInGrid()：去做確認，壁面失敗太多次產生錯誤題目，可自動判斷後再重新製作一個新的題目  `    
+  - `checkPutInGrid()：去做確認，避免失敗太多次產生錯誤題目，可自動判斷後再重新製作一個新的題目  `    
   - `print()：可以幫忙做輸出的動作   `   
   - `operator[]：為了方便操作，寫了一個operator來幫忙轉成int來使用   `      
       
 + **puzzleCheck**：確認是否有重複數字，並且可以用於main函式之中幫忙除錯，也可利用在Generator() 便於製作題目   
   - `nReaptingStraight：判斷直行是否出現重複數字`     
   - `nReaptingHorizontal：判斷橫行是否出現重複數字`    
-  - `nReaptingCroner：判斷直、行是否出現重複數字`    
+  - `nReaptingCroner：判斷直、橫是否出現重複數字`    
   - `nReaptingBlock：判斷區間是否出現重複數字`    
       
 + **sloveSudoku**：確認解答各數，保證挖洞後的題目只有一個正確解答   
       
-+ **dig**：挖空題目，目前只設置簡單版本，30格填空   
++ **dig**：挖空題目，目前只設置簡單版本，格填空   
 
 + **main**:執行
   - outOf:假如使用者輸入-1即可更改位置及數字
