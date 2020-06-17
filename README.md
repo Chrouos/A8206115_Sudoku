@@ -25,11 +25,11 @@
 `print()：可以幫忙做輸出的動作   `   
 `operator[]：為了方便操作，寫了一個operator來幫忙轉成int來使用   `      
       
-`puzzleCheck：確認是否有重複數字，並且可以適用於main函式之中幫忙除錯，告知使用者的提入錯誤，也可利用在Generator() 便於製作題目　　　 `        
-`nReaptingStraight：判斷直行是否出現重複數字　　 `        　
-`nReaptingHorizontal：判斷橫行是否出現重複數字　　 `        　
-`nReaptingCroner：判斷直、行是否出現重複數字     `        
-`nReaptingBlock：判斷區間是否出現重複數字   `        
+`puzzleCheck：確認是否有重複數字，並且可以適用於main函式之中幫忙除錯，告知使用者的提入錯誤，也可利用在Generator() 便於製作題目`   
+`nReaptingStraight：判斷直行是否出現重複數字`     
+`nReaptingHorizontal：判斷橫行是否出現重複數字`    
+`nReaptingCroner：判斷直、行是否出現重複數字`    
+`nReaptingBlock：判斷區間是否出現重複數字`    
       
 `sloveSudoku：確認解答各數，保證挖洞後的題目只有一個正確解答`   
       
