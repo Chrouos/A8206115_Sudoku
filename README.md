@@ -1,7 +1,9 @@
 # 數獨小遊戲
 ###### 一年級下學期 —— 物件導向期末專題
 
-![alt 文字](https://reurl.cc/KkoO6y "PCCU CSIE")
+![alt 文字][logo]
+
+[logo]: https://reurl.cc/KkoO6y "Logo 標題文字 2"
 題目：數獨  
 組長：黃懷萱  
 組員：王韻淳、林詠涵
